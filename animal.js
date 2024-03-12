@@ -69,7 +69,7 @@ function createAnimalCard(animal) {
 
   card.innerHTML = `
     <div class="animal-image">
-      <img src='images/${animal.name.toLowerCase()}.jpg' alt="${animal.name}" />
+      <img src='images/${animal.name}.jpg' alt="${animal.name}" />
     </div>
     <div class="animal-details">
       <h3>${animal.name}</h3>
