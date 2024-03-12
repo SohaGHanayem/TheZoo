@@ -22,7 +22,7 @@ function renderAnimal() {
 
   document.getElementById(
     "image"
-  ).innerHTML = `<img src="images/${selectedAnimal.toLowerCase()}.jpg" alt="${selectedAnimal}" />`;
+  ).innerHTML = `<img src="images/${selectedAnimal}.jpg" alt="${selectedAnimal}" />`;
   document.getElementById("name").innerText = `Name: ${selectedAnimal}`;
   document.getElementById("weight").innerText = `Weight: ${
     animalDetails.weight || ""

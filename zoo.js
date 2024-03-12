@@ -68,7 +68,7 @@ function createAnimalCard(animal) {
 
   // Add image element
   const image = document.createElement("img");
-  image.src = `images/${animal.name.toLowerCase()}.jpg`;
+  image.src = `images/${animal.name}.jpg`;
   image.alt = animal.name;
   card.appendChild(image);
 
