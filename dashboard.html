@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css" />
+    <link rel="stylesheet" href="header.css" />
+  </head>
+  <body>
+    <div id="header">
+      <span id="visitor-name">Hello!</span>
+      <span id="visitor-coins">Coins: 0</span>
+      <button id="dashboardButton" onclick="goToDashboard()">Dashboard</button>
+      <button id="backToZooButton" onclick="goToTheZoo()">back To Zoo</button>
+      <button id="resetButton" onclick="resetLocalStorage()">Reset</button>
+    </div>
+
+    <h1>Dashboard</h1>
+    <div id="favoriteAnimal"></div>
+
+    <div id="visitedAnimalsTable"></div>
+    <div id="fedAnimalsTable"></div>
+
+    <script src="./dashboard.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>

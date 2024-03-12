@@ -1,0 +1,86 @@
+<!-- animal.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animal</title>
+    <link rel="stylesheet" href="./animal.css" />
+    <link rel="stylesheet" href="./header.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div id="header">
+      <span id="visitor-name">Hello!</span>
+      <span id="visitor-coins">Coins: 0</span>
+      <button id="resetButton">Reset</button>
+      <button id="signupButton" onclick="goToSignup()">signup</button>
+      <button id="dashboardButton" onclick="goToDashboard()">Dashboard</button>
+    </div>
+
+    <div class="animal-details-container">
+      <div class="animal-image" id="image"></div>
+      <div class="animal-details">
+        <h1 id="name"></h1>
+        <p class="detail" id="weight"></p>
+        <p class="detail" id="height"></p>
+        <p class="detail" id="color"></p>
+        <p class="detail" id="habitat"></p>
+        <p class="detail" id="isPredator"></p>
+        <p class="detail" id="coins"></p>
+        <button id="feed-animal">Feed me</button>
+        <button id="back-to-zoo" onclick="goToTheZoo()">Back to Zoo</button>
+      </div>
+    </div>
+
+    <div class="related-animals" id="related-animals"></div>
+
+    <div
+      class="modal fade"
+      id="feedingModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="feedingModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="feedingModalLabel">Thank You!</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Your contribution has been acknowledged. The animal appreciates your
+            generosity!
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./animal.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>

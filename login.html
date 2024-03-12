@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./login.css" />
+    <link rel="stylesheet" href="./header.css" />
+  </head>
+  <body>
+    <div id="header">
+      <span id="visitor-name">Hello!</span>
+      <span id="visitor-coins">Coins: 0</span>
+      <button id="resetButton" onclick="">Reset</button>
+      <button id="signupButton" onclick="goToSignup()">signup</button>
+      <button id="startGameButton" onclick="startGame()">Start the Game</button>
+    </div>
+
+    <div class="container">
+      <h2>Login</h2>
+
+      <div id="selectedVisitorMessage"></div>
+      <label for="searchVisitor">Search Visitor:</label>
+      <input type="text" id="searchVisitor" oninput="filterVisitors()" />
+      <div id="visitorDisplay"></div>
+    </div>
+
+    <script src="./login.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>

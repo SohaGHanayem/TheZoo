@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zoo</title>
+    <link rel="stylesheet" href="zoo.css" />
+    <link rel="stylesheet" href="header.css" />
+  </head>
+  <body>
+    <div id="header">
+      <span id="visitor-name">Hello!</span>
+      <span id="visitor-coins">Coins: 0</span>
+      <button id="dashboardButton" onclick="goToDashboard()">Dashboard</button>
+      <button id="loginButton" onclick="goTologin()">login</button>
+      <button id="resetButton">Reset</button>
+    </div>
+
+    <div class="filters">
+      <label for="filter-is-predator">Is Predator:</label>
+      <select id="filter-is-predator">
+        <option value="all">All</option>
+        <option value="true">Yes</option>
+        <option value="false">No</option>
+      </select>
+
+      <label for="filter-habitat">Habitat:</label>
+      <select id="filter-habitat">
+        <option value="all">All</option>
+        <option value="land">Land</option>
+        <option value="sea">Sea</option>
+      </select>
+
+      <label for="filter-weight">Minimum Weight (kg):</label>
+      <input type="number" id="filter-weight" />
+
+      <label for="filter-height">Minimum Height (cm):</label>
+      <input type="number" id="filter-height" />
+
+      <label for="filter-color">Color:</label>
+      <select id="filter-color">
+        <option value="all">All</option>
+        <option value="brown">Brown</option>
+        <option value="grey">grey</option>
+      </select>
+
+      <label for="search-animal">Search by Name:</label>
+      <input type="text" id="search-animal" />
+
+      <button id="apply-filter">Apply Filter</button>
+    </div>
+
+    <div id="animal-cards" class="animal-cards"></div>
+    <script src="./main.js"></script>
+    <script src="./zoo.js"></script>
+  </body>
+</html>

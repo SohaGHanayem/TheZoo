@@ -1,0 +1,154 @@
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: right;
+}
+
+#user-info {
+  display: flex;
+  justify-content: space-between;
+}
+/* Reset some default margin and padding */
+body,
+h1,
+p,
+div {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Set body background color */
+body {
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+  background-image: url("images/joungle2 (1).JPG");
+}
+
+/* Container for animal details */
+.animal-details-container {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Animal image styles */
+#image {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+}
+
+#image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Animal details styles */
+.animal-details {
+  padding: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+p {
+  margin-bottom: 10px;
+  color: #666;
+}
+
+button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Related animals styles */
+.related-animals {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.related-animal {
+  width: 200px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.related-animal img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+
+.related-animal-details {
+  padding: 10px;
+}
+
+/* Additional styles for a clean look */
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+a:hover {
+  color: #4caf50;
+}
+section h1 {
+  justify-content: center;
+  align-self: center;
+  display: flexbox;
+}
+section {
+  display: flex;
+  width: 100%;
+}
+.related-animals-container {
+  margin-top: 20px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100px;
+  height: 100px;
+}
+
+.related-animal-card {
+  width: calc(33.33% - 20px); /* Three cards in a row with some spacing */
+  background-color: white;
+  padding: 10px;
+  margin: 10px;
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+.related-animal-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.animal-image img {
+  max-width: 100%;
+  height: 400px;
+  height: auto;
+  border-radius: 8px;
+}

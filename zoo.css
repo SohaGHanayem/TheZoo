@@ -1,0 +1,93 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url("images/joungle2 (1).JPG");
+}
+
+.filters {
+  padding: 10px;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.filters select,
+.filters input {
+  margin: 5px;
+  padding: 5px;
+}
+
+.filters button {
+  padding: 5px 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.filters button:hover {
+  background-color: #45a049;
+}
+
+.animal-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.animal-card {
+  border: 1px solid #ddd;
+  margin: 10px;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.animal-card img {
+  max-width: 100%;
+  max-height: 150px;
+  margin-bottom: 10px;
+}
+
+.animal-details h2 {
+  margin-top: 0;
+}
+
+.animal-details p {
+  margin: 5px 0;
+}
+
+.animal-details button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.animal-details button:hover {
+  background-color: #45a049;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: right;
+}
+
+#user-info {
+  display: flex;
+  justify-content: space-between;
+}
